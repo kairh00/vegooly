@@ -49,4 +49,5 @@ background('white');
 }
 function windowResized() {
   resizeCanvas(windowWidth, 4*windowWidth/10);
+  redraw();
 }
