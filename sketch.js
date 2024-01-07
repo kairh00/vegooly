@@ -14,7 +14,7 @@ function preload() {
   }
 }
 function setup() { 
-  createCanvas(displayWidth,displayHeight);
+  createCanvas(windowWidth, windowHeight);
   frameRate(1);
   bg=createGraphics(width,height);
   count=0;
@@ -46,4 +46,7 @@ background('white');
     }
   }
 
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
