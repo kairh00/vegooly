@@ -18,8 +18,8 @@ function setup() {
   frameRate(1);
   bg=createGraphics(width,height);
   count=0;
-  ro = displayHeight/120;
-  col = displayWidth/120;
+  ro = 4;
+  col = 12;
   cellw = width / col;
   cellh = cellw; 
 }
