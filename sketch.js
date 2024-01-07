@@ -20,7 +20,7 @@ function setup() {
   count=0;
   ro = 4;
   col = 10;
-  cellw = width / col;
+  cellw = windowWidth / col;
   cellh = cellw; 
 }
 function draw() {
