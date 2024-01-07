@@ -14,12 +14,12 @@ function preload() {
   }
 }
 function setup() { 
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth*0.84, windowWidth/10*4);
   frameRate(1);
   bg=createGraphics(width,height);
   count=0;
   ro = 4;
-  col = 12;
+  col = 10;
   cellw = width / col;
   cellh = cellw; 
 }
