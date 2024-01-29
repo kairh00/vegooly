@@ -4,6 +4,8 @@ let tiledark = [];
 let tilelight = [];
 let count;
 let bg;
+let ro=4;
+let col = 10;
 
 function preload() {
   for (let i = 0; i < 12; i++) {
@@ -14,12 +16,11 @@ function preload() {
   }
 }
 function setup() { 
-  createCanvas(windowWidth, 4*windowWidth/10);
+  if (windowWidth<= 480) {ro=6;col=4;} else {ro = 4;col=10;}
+  createCanvas(windowWidth, ro*windowWidth/col);
   frameRate(1);
   bg=createGraphics(width,height);
   count=0;
-  ro = 4;
-  col = 10;
   cellw = windowWidth / col;
   cellh = cellw; 
 }
